@@ -11,7 +11,7 @@ var MainPage = {
 
 	verifyCarouselWorks: function() {
 		this.driver.then(function() {
-			this.test.assertExists('.realEstateCarousel .carouselHolder', 'Real Estate Carousel widget is on the page');
+			this.test.assertExists('.realEstateCarousel1 .carouselHolder', 'Real Estate Carousel widget is on the page');
 		});
 	},
 
