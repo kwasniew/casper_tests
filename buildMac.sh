@@ -7,4 +7,6 @@ phantomjs --version;
 casperjs --version;
 
 cd test;
-casperjs test ap_main_page.js
+casperjs test ap_main_page.js;
+
+exit 0;
