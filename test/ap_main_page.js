@@ -17,7 +17,7 @@ var MainPage = {
 
 	verifyDateWidgetWorks: function() {
 		this.driver.then(function() {
-			this.test.assertExists('.widget.weather1', 'Weather widget is on the page');
+			this.test.assertExists('.widget.weather', 'Weather widget is on the page');
 			this.test.assert((this.fetchText('.widget.dateline').length > 0), "Date widget contains some text")
 		});
 	},
