@@ -22,7 +22,8 @@ var MainPage = {
 	},
 
 	verifyCanGoToOsloby: function() {
-		var self = this;
+		var self = this,
+            timeout = 5;
 		
 		self.driver.thenClick('li.osloby a').then(function() {
 			var oldUrl = self.driver.getCurrentUrl();
@@ -30,7 +31,9 @@ var MainPage = {
 				return (oldUrl !== self.driver.getCurrentUrl());
 			}, function() {
 				self.driver.test.assertSelectorHasText('title', 'Osloby');
-			});			
+			}, function() {
+                this.test.fail("Didn't open Osloby in " + timeout + " seconds");
+            }, 5 * 1000);
 		});
 	},
 

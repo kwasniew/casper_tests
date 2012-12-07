@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6bf8d25-5d11-4bb8-9146-0b2ec65a2d77" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildLinux.sh" afterPath="$PROJECT_DIR$/buildLinux.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ap_main_page.js" afterPath="$PROJECT_DIR$/test/ap_main_page.js" />
     </list>
     <ignored path="casper_tests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -69,19 +69,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ap_main_page.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ap_main_page.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ap_main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="20" selection-start="54" selection-end="54" vertical-scroll-proportion="-1.1538461">
+            <state line="34" column="66" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.7578009">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="buildLinux.sh" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="buildLinux.sh" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/buildLinux.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.2360515">
+            <state line="11" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,9 +109,9 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/test/ap_main_page.js" />
         <option value="$PROJECT_DIR$/buildMac.sh" />
         <option value="$PROJECT_DIR$/buildLinux.sh" />
+        <option value="$PROJECT_DIR$/test/ap_main_page.js" />
       </list>
     </option>
   </component>
@@ -441,9 +441,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ap_main_page.js">
+    <entry file="file://$PROJECT_DIR$/buildLinux.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="20" selection-start="54" selection-end="54" vertical-scroll-proportion="-1.1538461">
+        <state line="11" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -455,9 +455,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/buildLinux.sh">
+    <entry file="file://$PROJECT_DIR$/test/ap_main_page.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="24" selection-start="320" selection-end="320" vertical-scroll-proportion="0.2360515">
+        <state line="34" column="66" selection-start="1096" selection-end="1096" vertical-scroll-proportion="0.7578009">
           <folding />
         </state>
       </provider>
