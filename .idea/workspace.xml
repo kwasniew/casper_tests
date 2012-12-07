@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="d6bf8d25-5d11-4bb8-9146-0b2ec65a2d77" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildLinux.sh" afterPath="$PROJECT_DIR$/buildLinux.sh" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/buildMac.sh" afterPath="$PROJECT_DIR$/buildMac.sh" />
     </list>
     <ignored path="casper_tests.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -82,7 +81,7 @@
       <file leaf-file-name="buildLinux.sh" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/buildLinux.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="23" selection-start="238" selection-end="238" vertical-scroll-proportion="0.12875536">
+            <state line="5" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.10729614">
               <folding />
             </state>
           </provider>
@@ -458,7 +457,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/buildLinux.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="23" selection-start="238" selection-end="238" vertical-scroll-proportion="0.12875536">
+        <state line="5" column="0" selection-start="167" selection-end="167" vertical-scroll-proportion="0.10729614">
           <folding />
         </state>
       </provider>
