@@ -1,9 +1,8 @@
 var MainPage = {
 	driver: require('casper').create(),
-	url: "http://ap.no",
 
 	open: function() {
-		this.driver.start(this.url, function() {
+		this.driver.start(this.driver.cli.get('url'), function() {
 			this.test.assertSelectorHasText('title', 'Forside');
 		});
 	},

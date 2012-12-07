@@ -7,6 +7,6 @@ phantomjs --version;
 casperjs --version;
 
 cd test;
-casperjs test ap_main_page.js;
+casperjs test ap_main_page.js --url='http://ap.no';
 
 exit 0;
