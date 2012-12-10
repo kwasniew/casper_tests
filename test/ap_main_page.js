@@ -18,6 +18,9 @@ var MainPage = {
         this.driver.then(function() {
             this.test.assertExists('section.mostRead', 'Most Read (Mest Lest) section is present on the page');
             this.test.assertEquals(this.fetchText('section.mostRead h2').trim(), 'Mest lest', 'Most Read section title is Mest Lest');
+            this.test.assertEval(function() {
+                return document.querySelectorAll('section.mostRead li').length === 5;
+            }, 'Most Read section contains 5 news items');
         });
     },
 
