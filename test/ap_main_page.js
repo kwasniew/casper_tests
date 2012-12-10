@@ -10,14 +10,14 @@ var MainPage = {
 
 	verifyCarouselWorks: function() {
 		this.driver.then(function() {
-			this.test.assertExists('.realEstateCarousel .carouselHolder', 'Real Estate Carousel widget is on the page');
+			this.test.assertExists('.realEstateCarousel .carouselHolder', 'Real Estate Carousel widget is not present on the page');
 		});
 	},
 
 	verifyDateWidgetWorks: function() {
 		this.driver.then(function() {
-			this.test.assertExists('.widget.weather', 'Weather widget is on the page');
-			this.test.assert((this.fetchText('.widget.dateline').length > 0), "Date widget contains some text")
+			this.test.assertExists('.widget.weather', 'Weather widget is non present on the page');
+			this.test.assert((this.fetchText('.widget.dateline').length > 0), "Date widget doesn't contain any text")
 		});
 	},
 
