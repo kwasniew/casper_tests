@@ -9,7 +9,18 @@
 
         goToOsloby: function() {
             return this.driver.thenClick('li.osloby a');
-        }
+        },
+
+        carouselSelector: '.realEstateCarousel .carouselHolder',
+
+        titleSelector: 'title',
+
+        mostReadSelector: 'section.mostRead',
+        mostReadHeaderSelector: 'section.mostRead h2',
+        mostReadItemSelector: 'section.mostRead li',
+
+        dateWidgetSelector: '.widget.weather',
+        dateWidgetTextSelector: '.widget.dateline'
     }
 
     var MainPageTests = {
@@ -17,30 +28,30 @@
 
         containsCorrectTitle: function() {
             this.driver.then(function() {
-                this.test.assertSelectorHasText('title', 'Forside', 'Page title contains word Forside');
+                this.test.assertSelectorHasText(MainPage.titleSelector, 'Forside', 'Page title contains word Forside');
             });
         },
 
         carouselWorks: function() {
             this.driver.then(function() {
-                this.test.assertExists('.realEstateCarousel .carouselHolder', 'Real Estate Carousel widget is present on the page');
+                this.test.assertExists(MainPage.carouselSelector, 'Real Estate Carousel widget is present on the page');
             });
         },
 
         mostReadSectionWorks: function() {
             this.driver.then(function() {
-                this.test.assertExists('section.mostRead', 'Most Read (Mest Lest) section is present on the page');
-                this.test.assertEquals(this.fetchText('section.mostRead h2').trim(), 'Mest lest', 'Most Read section title is Mest Lest');
-                this.test.assertEval(function() {
-                    return document.querySelectorAll('section.mostRead li').length === 5;
-                }, 'Most Read section contains 5 news items');
+                this.test.assertExists(MainPage.mostReadSelector, 'Most Read (Mest Lest) section is present on the page');
+                this.test.assertEquals(this.fetchText(MainPage.mostReadHeaderSelector).trim(), 'Mest lest', 'Most Read section title is Mest Lest');
+                this.test.assertEval(function(selector) {
+                    return document.querySelectorAll(selector).length === 5;
+                }, 'Most Read section contains 5 news items', MainPage.mostReadItemSelector);
             });
         },
 
         dateWidgetWorks: function() {
             this.driver.then(function() {
-                this.test.assertExists('.widget.weather', 'Weather widget is present on the page');
-                this.test.assert((this.fetchText('.widget.dateline').length > 0), 'Date widget should contain some text');
+                this.test.assertExists(MainPage.dateWidgetSelector, 'Weather widget is present on the page');
+                this.test.assert((this.fetchText(MainPage.dateWidgetTextSelector).length > 0), 'Date widget should contain some text');
             });
         },
 
