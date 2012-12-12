@@ -4,7 +4,9 @@
         driver: casperDriver,
 
         open: function() {
-            return this.driver.start(this.driver.cli.get('url'));
+            return this.driver.start(this.driver.cli.get('url'), function() {
+                this.capture('ap_main.png');
+            });
         },
 
         goToOsloby: function() {
